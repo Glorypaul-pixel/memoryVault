@@ -76,12 +76,3 @@ When a user triggers **Export Vault**:
 5. A secure, one-time download link is generated.
 6. The user receives a downloadable file (ZIP or JSON).
 
-```mermaid
-flowchart TD
-    A[User - React Frontend] -->|Export Request| B[Backend - Express Server]
-    B -->|Authenticate| E[JWT Auth]
-    B -->|Query All Data| C[Convex DB]
-    C -->|Return Data| B
-    B -->|Bundle Data (ZIP/JSON)| D[Export Module]
-    D -->|Generate File Link| A[User Downloads Vault]
-```
