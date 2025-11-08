@@ -75,4 +75,3 @@ When a user triggers **Export Vault**:
 4. Data is bundled using a Node.js library (e.g., `archiver` for ZIP or JSON conversion).
 5. A secure, one-time download link is generated.
 6. The user receives a downloadable file (ZIP or JSON).
-
